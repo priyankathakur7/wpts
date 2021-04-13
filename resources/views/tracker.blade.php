@@ -29,7 +29,7 @@
                     -------------------------------------------------------- --}}
                     <div class="form-group">
                         <label for="p-startdate">Period start date :</label>
-                        <input type="date" class="form-control" id="p-startdate" name="p-startdate">
+                        <input type="date" class="form-control" id="p-startdate" name="p-startdatee">
                     </div>
 
                     <div class="form-group">
