@@ -11,15 +11,7 @@
 
         <!-- Styles -->
         <style>
-            .wc_text{
-                font-size: 40px;
-                margin: 0; 
-                padding: 0;
-            }
-            .uc_text{
-                font-size: 50px;
-                margin: 5%;
-                color: red;
+c
             }
             html, body {
                 background-color: black;
@@ -37,7 +29,7 @@
             .flex-center {
                 align-items: center;
                 display: flex;
-                justify-content: center;
+                justify-content: center;  
             }
 
             .position-ref {
