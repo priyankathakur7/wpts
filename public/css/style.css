@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 .wc_text{
     font-size: 100px;
 }
@@ -67,4 +70,19 @@ a.navbar-brand {
 
 .home-wrapper .btn {
     background: lightseagreen;
+}
+
+.tracker {
+    background: url(/images/xz.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 100vh;
+    background-position: 60px 0px !important;
+} 
+
+.form-tracker {
+    background: #ffffffbf;
+    border: 1px solid #9c9c9c!important;
+    border-radius: 6px;
+    padding: 61px 25px;
 }

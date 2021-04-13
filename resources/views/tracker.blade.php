@@ -6,9 +6,9 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container tracker">
 
-        <img src="{{asset('/images/xz.png'}}" alt="">
+        <!-- <img src="{{asset('/images/xz.png')}}" alt=""> -->
 
         {{-- Popup Predicted Date
         -------------------------------------------------------- --}}
@@ -18,7 +18,7 @@
 
         {{-- Form
         -------------------------------------------------------- --}}
-        <form enctype="multipart/form-data" class="border">
+        <form action="{{url('/posts')}}" method="POST" enctype="multipart/form-data" class="form-tracker">
             @csrf
             <div class="form-group row">
                 <div class="col-sm-6 mx-auto">
@@ -40,11 +40,13 @@
                     <div class="result-date form-group">
                         <label>Your Predicted date is : <span class="show-date"></span></label>
                     </div>
+
                     <div class="error form-group">
                         <label>Please enter all details</label>
                     </div>
                     <div>
                         <label for="A"> Age</label>
+                        <input type="number" name="age" id="age" placeholder="Enter your age">
                     </div>
 
                     {{-- Submit button
