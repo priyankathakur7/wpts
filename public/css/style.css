@@ -1,0 +1,70 @@
+.wc_text{
+    font-size: 100px;
+}
+
+.card-header{
+    background-color: lightseagreen;
+    color:white;
+}
+
+.lg-btn{
+    background-color: lightseagreen;
+}
+
+.flex-center{
+    background-color: lightseagreen;
+}
+nav{
+    background-color: lightseagreen !important;
+}
+
+/* Navbar ------------------------- */
+
+a.navbar-brand {
+    color: white !important;
+}
+
+#navbarDropdown{
+    color: white;
+}
+.nav-link{
+    color: white !important;
+}
+
+/* Form  ------------------------- */
+
+.result-date{
+    display: none;
+}
+.result-date .show-date{
+    color: #e91e63;
+}
+.error {
+    display: none;
+}
+.error label{
+    color: #e91e63;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin-top: -31.5px;
+    margin-left: -250px;
+    padding: 29px 20px 20px 20px;
+    background: #e91e63;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 1px 12px 1px #e91e63a8; 
+    display: none;
+    text-align: center;
+}
+.btn22{
+    background: lightseagreen !important;
+    color: #fff;
+}
+
+.home-wrapper .btn {
+    background: lightseagreen;
+}
