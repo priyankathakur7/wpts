@@ -11,11 +11,11 @@
 
         <!-- Styles -->
         <style>
-c
-            }
-            html, body {
-                background-color: black;
-                color:white;
+
+            
+            body {
+                background-color: black ;
+                color: white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
