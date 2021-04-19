@@ -37,6 +37,11 @@
                         <input type="number" class="form-control" id="flowdays" name="flowdays" placeholder="Enter total flow days">
                     </div>
 
+                    <div>
+                        <label for="A"> Age</label>
+                        <input  type="number" class="form-control" name="age" id="age" placeholder="Enter your age">
+                    </div>
+
                     <div class="result-date form-group">
                         <label>Your Predicted date is : <span class="show-date"></span></label>
                     </div>
@@ -44,10 +49,7 @@
                     <div class="error form-group">
                         <label>Please enter all details</label>
                     </div>
-                    <div>
-                        <label for="A"> Age</label>
-                        <input type="number" name="age" id="age" placeholder="Enter your age">
-                    </div>
+                    
 
                     {{-- Submit button
                     -------------------------------------------------------- --}}
@@ -60,11 +62,10 @@
             </div>
         </form>
     </div>
-    
-@endsection
 
-@section('script')
     <script>
+
+
 
         $(document).ready(function () {
 
@@ -83,6 +84,7 @@
             // Calculate Period date on click  ----------------------------------
             $('#track').click(function (e) {
                 e.preventDefault(); 
+                
                 track_period();
             });
 
@@ -140,4 +142,7 @@
         });
         
     </script>
+    
 @endsection
+
+ 
