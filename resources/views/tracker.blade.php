@@ -73,13 +73,13 @@
             var period_startdate;
             var total_flowdays;
             var total_days;
-            var finaldate;
+            var finaldate; 
 
             var popup = $('.popup');
             var result_date = $('.result-date');
             var show_date = $('.show-date');
 
-            var error = $('.error');
+            var error = $('.error'); 
 
             // Calculate Period date on click  ----------------------------------
             $('#track').click(function (e) {
