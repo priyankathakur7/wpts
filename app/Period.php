@@ -11,6 +11,7 @@ class Period extends Model
     'pstart_date',
     'flowdays',
     'age',
+    'result_date'
   ];
 // protected $guarded = [];
 

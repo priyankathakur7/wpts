@@ -1,10 +1,79 @@
+
+
+/* GLobal ------------------------- */
+/* Navbar ------------------------- */
+/* Responsive --------------------- */
+
+
+/* GLobal ---------------------------------------------------------------- */
+
+a:hover {
+    color:black;
+    text-decoration: none;
+}
 body {
     min-height: 100vh;
+    background: #fff;
 }
+main {
+    padding: 100px 0;
+}
+
+.title {
+    color: #757978;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 25px !important;
+    border: 2px solid #6dc1c638 !important;
+    background: #6fc5c91c !important;
+    padding: 23px 15px;
+    font-size: 16px;
+}
+
+/* Button ----------------------------------- */
+
+.btn {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 22px;
+    padding: 10px 20px;
+}
+
+
+
+.btn-pink {
+    background: #ea75ce;
+}
+.btn-pink:hover {
+    color: #fff;
+    background: #d83bb3;
+}
+.btn-pink:focus {
+    box-shadow: 0 0 0 0.2rem rgb(234 117 206 / 22%) !important;
+}
+
+
+.btn-green {
+    background: #6dc1c6;
+}
+.btn-green:hover {
+    color: #fff;
+    background: #34a2a8;
+}
+.btn-green:focus {
+    box-shadow: 0 0 0 0.2rem rgb(109 193 198 / 27%) !important;
+}
+
+
+/* Button End */
+
 .wc_text{
     font-size: 100px;
 }
-
 
 .card-header{
     background-color: lightseagreen;
@@ -15,17 +84,23 @@ body {
     background-color: lightseagreen;
 }
 
-.flex-center{
-    background-color: lightseagreen;
-}
+
+/* Navbar ------------------------------------------------------------------------------- */
+
 nav{
+    /* height: 75px; */
+    /* height: 100px; */
+    height: 114px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
     background-color: lightseagreen !important;
 }
-
-/* Navbar ------------------------- */
-
 a.navbar-brand {
     color: white !important;
+    font-size: 19px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 #navbarDropdown{
@@ -34,56 +109,45 @@ a.navbar-brand {
 .nav-link{
     color: white !important;
 }
+.nav-item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.nav-item a {
+    color: #fff ;
+}
+.dropdown-menu {
+    background: #ea75ce;
+}
 
-/* Form  ------------------------- */
+.period_logo {
+    font-size: 35px;
+    margin-bottom: -42px;
+    display: block;
+}
 
-.result-date{
-    display: none;
-}
-.result-date .show-date{
-    color: #e91e63;
-}
-.error {
-    display: none;
-}
-.error label{
-    color: #e91e63;
-}
-.popup {
+/* Toast  ------------------------------------------------------------------- */
+
+.toast {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    margin-top: -31.5px;
-    margin-left: -250px;
-    padding: 29px 20px 20px 20px;
-    background: #e91e63;
+    top: 142px;
+    z-index: 11;
+    right: 45px;
+    /* left: 171px; */
+    flex-basis: 300px;
+    max-width: 300px;
+    font-size: 17px;
     color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 1px 12px 1px #e91e63a8; 
+    background-color: #ea75ce;
+    box-shadow: 0 2px 9px 2px #eee3e3;
+    opacity: 1;
+    border-radius: 10px;
+    background-clip: unset;
+    border: none;
+    overflow: hidden;
     display: none;
-    text-align: center;
-}
-.btn22{
-    background: lightseagreen !important;
-    color: #fff;
 }
 
-.home-wrapper .btn {
-    background: lightseagreen;
-}
+/* Responsive  ------------------------------------------------------------------- */
 
-.tracker {
-    background: url(/images/xz.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    height: 100vh;
-    background-position: 60px 0px !important;
-} 
-
-.form-tracker {
-    background: #ffffffbf;
-    border: 1px solid #9c9c9c!important;
-    border-radius: 6px;
-    padding: 61px 25px;
-}

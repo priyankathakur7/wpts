@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -21,13 +21,14 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/akamaster.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand " href="{{ url('/') }}">
-                   WPTS
+                <a class="navbar-brand " href="{{ url('/home') }}">
+                  <span class="period_logo">Period</span><br> Tracking System
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@
                         @else
 
                         <!-- tracker -------------- -->
-                        <li><a href="{{url('periods/create')}}">Track Period</a></li>
+                        <li class="nav-item mr-4"><a href="{{url('periods/create')}}">Track Period</a></li>
 
 
                             <li class="nav-item dropdown">
@@ -82,9 +83,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>
+
+     @yield('css')
+     @yield('js')
 </body>
 </html>

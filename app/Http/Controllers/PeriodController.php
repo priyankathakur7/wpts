@@ -35,7 +35,12 @@ class PeriodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $rest = Period::create($request->all());
+        $response = array(
+                'status' => 'success',
+                'msg' => 'Your predicted is saved',
+            );
+        return response()->json($response);
     }
 
     /**
