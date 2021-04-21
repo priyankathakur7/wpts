@@ -181,7 +181,7 @@
                 background: #ffffffbf;
                 border-radius: 33px;
                 padding: 44px 47px 33px 47px;
-                box-shadow: -1px 1px 10px 1px #edededd6;
+                box-shadow: -1px 1px 10px 1px #d5d4d4d6;
             }
             button#track {
                 margin-right: 3px !important;

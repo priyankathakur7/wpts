@@ -6,6 +6,11 @@
 
 
 /* GLobal ---------------------------------------------------------------- */
+:root {
+    --pink: #ea75ce;
+    --lightgreen: #6dc1c6;
+    --green: lightseagreen;
+}
 
 a:hover {
     color:black;
@@ -83,6 +88,9 @@ main {
 .lg-btn{
     background-color: lightseagreen;
 }
+.lg-btn:hover{
+    color: #fff;
+}
 
 
 /* Navbar ------------------------------------------------------------------------------- */
@@ -125,6 +133,10 @@ a.navbar-brand {
     font-size: 35px;
     margin-bottom: -42px;
     display: block;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--pink) !important;
 }
 
 /* Toast  ------------------------------------------------------------------- */
