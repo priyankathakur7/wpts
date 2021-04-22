@@ -15,7 +15,7 @@ class PeriodController extends Controller
     public function index()
     {
         $datas = Period::where('user_id', '=', auth()->user()->id )->get();
-        return view("home",compact('datas'));
+        return view("dashboard",compact('datas'));
     }
 
     /**

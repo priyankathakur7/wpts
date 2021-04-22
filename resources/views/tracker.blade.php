@@ -115,6 +115,10 @@
                                 <button id="track" class="btn btn-pink mx-auto">Track</button>
                                 <button type="submit" id="submit" class="btn btn-green mx-auto">Save Prediction</button>
                             </div>
+                            
+                            {{-- Loader
+                            -------------------------------------------------------- --}}
+                            <span class="loader"></span>
         
                         </div>
                     </div>

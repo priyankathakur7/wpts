@@ -15,12 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tracker', function () {
-    return view('tracker');
-});
-
 Auth::routes();
 
-Route::get('/home', 'PeriodController@index');
-
 Route::resource('/periods','PeriodController');
+
+Route::group(['middleware' => ['auth']], function() {
+    // your routes
+    Route::get('/dashboard', 'PeriodController@index');
+});

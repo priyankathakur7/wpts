@@ -56,7 +56,7 @@
                         @else
 
                         <!-- tracker -------------- -->
-                        <li class="nav-item mr-4"><a href="{{url('/home')}}">Dashboard</a></li>
+                        <li class="nav-item mr-4"><a href="{{url('/dashboard')}}">Dashboard</a></li>
                         <li class="nav-item mr-4"><a href="{{url('periods/create')}}">Track Period</a></li>
 
 
