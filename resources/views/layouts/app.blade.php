@@ -27,7 +27,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand " href="{{ url('/home') }}">
+                <a class="navbar-brand " href="{{ url('/') }}">
                   <span class="period_logo">Period</span><br> Tracking System
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -56,6 +56,7 @@
                         @else
 
                         <!-- tracker -------------- -->
+                        <li class="nav-item mr-4"><a href="{{url('/home')}}">Dashboard</a></li>
                         <li class="nav-item mr-4"><a href="{{url('periods/create')}}">Track Period</a></li>
 
 
